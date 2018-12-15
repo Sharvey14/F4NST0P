@@ -5,25 +5,182 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#f2f21f"
     tools:context=".MainActivity">
 
-<TextView
-    android:layout_width="150dp"
-    android:layout_height="50dp"
-    android:text="F4NST0P"
-    android:textColor="@android:color/red"
-    android:textSize="35dp"
-    android:layout_gravity="center"
-    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="60dp"
         android:src="@drawable/ps4symbol"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="335dp"
-        
-        android:layout_gravity="center"
         />
 
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="F4NST0P"
+        android:textColor="@android:color/red"
+        android:textSize="35dp"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/fans"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:text="Best Selling PS4 Games"
+        android:background="#003791"/>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Grand Theft Auto Springfield"
+        android:textSize="20sp"
+        android:textColor="#f2f21f"
+        android:background="#008000"
+        />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="$59.99"
+        android:textSize="30sp"
+        android:textColor="#ffa500"
+        android:background="#008000"
+        />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="Bundles:"
+        android:textSize="20sp"
+        android:textColor="#f2f21f"
+        android:background="#008000"
+        />
+
+    <CheckBox
+        android:id="@+id/krusty_headset"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:buttonTint="@android:color/red"
+        android:text="Krusty Headset
+      ($39.99)"
+        android:textColor="#f2f21f"
+        android:background="#008000"
+        />
+
+    <CheckBox
+        android:id="@+id/homer_ps4_skin"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:buttonTint="@android:color/red"
+        android:text="Homer PS4
+controller Skin
+  ($14.99)"
+        android:textColor="#f2f21f"
+        android:background="#008000"
+        />
+
+    <CheckBox
+        android:id="@+id/homer_donut_skin"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:buttonTint="@android:color/red"
+        android:text="Homer Donut
+PS4 Skin ($29.99)"
+        android:textColor="#f2f21f"
+        android:background="#008000"
+        />
+
+    <CheckBox
+        android:id="@+id/homer_psvr_skin"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:buttonTint="@android:color/red"
+        android:text="Homer PSVR Skin
+      ($19.99)"
+        android:textColor="#f2f21f"
+        android:background="#008000"
+        />
+
+    <ImageView
+        android:layout_width="235dp"
+        android:background="#008000"
+        android:paddingBottom=""
+        android:layout_height="295dp"
+        android:layout_marginTop="-322dp"
+        android:layout_marginLeft="152dp"
+        android:src="@drawable/springfield"
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@android:color/red"
+    >
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="+"
+        android:textSize="35sp"
+        android:onClick="increase"
+        android:textColor="#ffa500"
+        android:background="@drawable/blue"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="2dp"
+        android:text="0"
+        android:textSize="50sp"
+        />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="-"
+        android:layout_marginLeft="-30dp"
+        android:textSize="35sp"
+        android:onClick="decrease"
+        android:textColor="#ffa500"
+        android:background="@drawable/blue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-25dp"
+        android:text="Price: "
+        android:textSize="25dp"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="-50dp"
+        android:text="ORDER"
+        android:textSize="35sp"
+        android:onClick="submitOrder"
+        android:textColor="#ffa500"
+        android:background="@drawable/blue"
+        />
+</LinearLayout>
 </LinearLayout>
